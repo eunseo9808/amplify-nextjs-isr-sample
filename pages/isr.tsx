@@ -26,6 +26,6 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
     props: {
       timestamp: new Date().getTime(),
     },
-    revalidate: 5, //5秒キャッシュ
+    revalidate: 60, //5秒キャッシュ
   };
 };
